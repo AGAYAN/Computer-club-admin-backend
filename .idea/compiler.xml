@@ -6,7 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="config-server" />
         <module name="interation-api" />
+        <module name="discovery-server" />
+        <module name="gateway-server" />
+        <module name="infra" />
       </profile>
       <profile name="Annotation profile for pet-project-Computer-club-admin" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />

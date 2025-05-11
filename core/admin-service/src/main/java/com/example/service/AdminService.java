@@ -12,5 +12,4 @@ public interface AdminService {
 
     void deleteAdminById(Long adminId);
 
-
 }

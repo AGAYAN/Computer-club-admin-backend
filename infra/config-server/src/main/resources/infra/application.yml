@@ -1,0 +1,16 @@
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: user-service_route
+          uri: lb://user-service
+          predicates:
+            - Path/api/users/**
+
+        - id: admin-service_route
+          uri: lb://admin-service
+          predicates:
+            - Path/api/admin/**
